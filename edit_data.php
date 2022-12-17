@@ -1,7 +1,8 @@
 <?php
    header('Access-Control-Allow-Origin: *');
 
-   $conn = mysqli_connect('localhost:8889','root','root','iot_database');
+//    $conn = mysqli_connect('localhost:8889','root','root','iot_database');
+   $conn = mysqli_connect('localhost','iot_admin','G@i!Km2j3CJ-B^8g','iot_database');
    $bicycle_id = $_POST['bicycle_id'];
    $bicycle_status = $_POST['bicycle_status'];
    $time = $_POST['time'];
