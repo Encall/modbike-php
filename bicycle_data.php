@@ -5,7 +5,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 $conn = mysqli_connect('localhost','iot_admin','G@i!Km2j3CJ-B^8g','iot_database');
 
-$sql = "SELECT * FROM bicycle_data";
+$sql = "SELECT * FROM bicycle_data JOIN GPSData USING (node);";
 $mysqli = mysqli_query($conn, $sql);
 $json_data = array();
 
